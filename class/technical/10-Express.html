@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Express | IJssel</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.b6403466.css" as="style"><link rel="preload" href="/assets/js/app.b4c8b98b.js" as="script"><link rel="preload" href="/assets/js/9.028cc7b7.js" as="script"><link rel="preload" href="/assets/js/2.02848b49.js" as="script"><link rel="preload" href="/assets/js/34.c9bcdbc5.js" as="script"><link rel="prefetch" href="/assets/js/1.b30c0b2f.js"><link rel="prefetch" href="/assets/js/10.70a4d38a.js"><link rel="prefetch" href="/assets/js/11.b70f0c45.js"><link rel="prefetch" href="/assets/js/12.1f6b1c55.js"><link rel="prefetch" href="/assets/js/13.2d3fd4fc.js"><link rel="prefetch" href="/assets/js/14.a26dab64.js"><link rel="prefetch" href="/assets/js/15.d1c8baca.js"><link rel="prefetch" href="/assets/js/16.8ac78c11.js"><link rel="prefetch" href="/assets/js/17.bd205e0a.js"><link rel="prefetch" href="/assets/js/18.28b860b0.js"><link rel="prefetch" href="/assets/js/19.386071c9.js"><link rel="prefetch" href="/assets/js/20.a38cfcb4.js"><link rel="prefetch" href="/assets/js/21.0dbd6581.js"><link rel="prefetch" href="/assets/js/22.ec932502.js"><link rel="prefetch" href="/assets/js/23.3da0c521.js"><link rel="prefetch" href="/assets/js/24.1935e904.js"><link rel="prefetch" href="/assets/js/25.9c98c484.js"><link rel="prefetch" href="/assets/js/26.200a8282.js"><link rel="prefetch" href="/assets/js/27.8366e8ab.js"><link rel="prefetch" href="/assets/js/28.58d2f67a.js"><link rel="prefetch" href="/assets/js/29.401270ec.js"><link rel="prefetch" href="/assets/js/30.1262895c.js"><link rel="prefetch" href="/assets/js/31.93616435.js"><link rel="prefetch" href="/assets/js/32.eb289e31.js"><link rel="prefetch" href="/assets/js/33.2beb173a.js"><link rel="prefetch" href="/assets/js/35.2eb41549.js"><link rel="prefetch" href="/assets/js/36.a4f8bfdf.js"><link rel="prefetch" href="/assets/js/37.716cca94.js"><link rel="prefetch" href="/assets/js/38.90af0e97.js"><link rel="prefetch" href="/assets/js/39.22dcd180.js"><link rel="prefetch" href="/assets/js/4.fa009bc8.js"><link rel="prefetch" href="/assets/js/40.051767f2.js"><link rel="prefetch" href="/assets/js/41.21cf8782.js"><link rel="prefetch" href="/assets/js/42.fa8374f5.js"><link rel="prefetch" href="/assets/js/5.d532437c.js"><link rel="prefetch" href="/assets/js/6.29715472.js"><link rel="prefetch" href="/assets/js/7.6c1aa79f.js"><link rel="prefetch" href="/assets/js/8.8692861a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b6403466.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-4689b1e6><div data-v-4689b1e6><header class="navbar"><div><a href="/">IJssel的博客</a></div> <div class="links" style="max-width:nullpx;"><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+    首页
+</a></div> <div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/class/person/index.html" class="nav-link">
+    个人随笔
+</a></li><li class="dropdown-item"><!----> <a href="/class/technical/index.html" class="nav-link">
+    技术分享
+</a></li><li class="dropdown-item"><!----> <a href="/class/gossip/index.html" class="nav-link">
+    闲言碎语
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">实验室</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/IJssel/shop-vue-master" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    CSS/HTML
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/IJssel/shop-vue-master" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    购物商城小程序
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/IJssel/shop-vue-master" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    vue商城
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><a href="/study/index.html" class="nav-link">
+    文档
+</a></div><div class="nav-item"><a href="/links/index.html" class="nav-link">
+    链接
+</a></div><div class="nav-item"><a href="/about/index.html" class="nav-link">
+    关于
+</a></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></nav></div></header></div> <div class="sidebar-mask" data-v-4689b1e6></div> <div data-v-4689b1e6><div class="lright"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+    首页
+</a></div> <div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/class/person/index.html" class="nav-link">
+    个人随笔
+</a></li><li class="dropdown-item"><!----> <a href="/class/technical/index.html" class="nav-link">
+    技术分享
+</a></li><li class="dropdown-item"><!----> <a href="/class/gossip/index.html" class="nav-link">
+    闲言碎语
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">实验室</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/IJssel/shop-vue-master" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    CSS/HTML
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/IJssel/shop-vue-master" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    购物商城小程序
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/IJssel/shop-vue-master" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    vue商城
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><a href="/study/index.html" class="nav-link">
+    文档
+</a></div><div class="nav-item"><a href="/links/index.html" class="nav-link">
+    链接
+</a></div><div class="nav-item"><a href="/about/index.html" class="nav-link">
+    关于
+</a></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></nav>  <!----> </div></div> <div class="container el-row" data-v-4689b1e6><div class="el-col el-col-24 el-col-sm-24 el-col-md-18"><div class="page"><div class="blog-header"><div class="blog-info"><span class="tag-list"><span class="tag-list__item">Express</span></span> <time datetime="2019-07-18T00:00:00.000Z" class="time">
+                        2019-07-18
+                    </time> <h1 class="blog-title">Express</h1></div></div> <div custom="" class="content__default"><h2 id="express"><a href="#express" class="header-anchor">#</a> Express</h2> <p>Express之HelloWorld</p> <div class="language- extra-class"><pre class="language-text"><code>var express = require('express');//引入Express模块
+var app = express();	//创建Express方法
+
+const app = require('express')();//等效
+
+// 绑定路由
+app.get('/', function(req, res) {
+    // 响应请求
+    res.send('Hello World!');
+});
+
+var server = app.listen(3000, &quot;localhost&quot;, function() {
+    // 监听的域名或者IP
+    var host = server.address().address;
+    // 监听的端口
+    var port = server.address().port;
+    console.log('Example app listening at http://%s:%s', host, port);
+});
+</code></pre></div><p>托管静态文件</p> <p>可以指定虚拟目录
+可以指定多个目录作为静态资源目录</p> <div class="language- extra-class"><pre class="language-text"><code>const express = require('express');
+const app = express();
+// 实现静态资源服务
+// use方法的第一个参数可以指定一个虚拟路径
+// let server = app.use('/abc',express.static('public'));
+// app.use('/nihao',express.static('hello'));
+// server.listen(3000,()=&gt;{
+//     console.log('running...');
+// });
+// -----------------------------------
+app.use('/abc',express.static('public'));
+app.use('/nihao',express.static('hello'));
+app.listen(3000,()=&gt;{
+    console.log('running...');
+});
+</code></pre></div><h4 id="路由"><a href="#路由" class="header-anchor">#</a> 路由</h4> <p>根据请求路径和请求方式进行路径分发处理
+http的常用请求方式：
+post   添加
+get    查询
+put    更新
+delete 删除</p> <h5 id="get-post-put-请求路由到某路径"><a href="#get-post-put-请求路由到某路径" class="header-anchor">#</a> get() 	post()	put() 	请求路由到某路径</h5> <h5 id="delete-删除请求路由"><a href="#delete-删除请求路由" class="header-anchor">#</a> delete() 	删除请求路由</h5> <h5 id="all-执行回调all-all方法绑定的路由与请求方式无关"><a href="#all-执行回调all-all方法绑定的路由与请求方式无关" class="header-anchor">#</a> all() 	执行回调all()	//all方法绑定的路由与请求方式无关</h5> <h5 id="use-挂载中间件方法到路径上即加"><a href="#use-挂载中间件方法到路径上即加" class="header-anchor">#</a> use()	挂载<a href="http://expressjs.com/guide/using-middleware.html" target="_blank" rel="noopener noreferrer">中间件<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>方法到路径上	即加/</h5> <h5 id="route-返回单个路由的实例"><a href="#route-返回单个路由的实例" class="header-anchor">#</a> route()	返回单个路由的实例</h5> <div class="language- extra-class"><pre class="language-text"><code>app.get('/',(req,res)=&gt;{	//实例
+     res.send('get data');
+});
+</code></pre></div><h3 id="案例-成绩查询"><a href="#案例-成绩查询" class="header-anchor">#</a> 案例: 成绩查询</h3> <div class="language- extra-class"><pre class="language-text"><code>&lt;body&gt;
+    &lt;form action=&quot;http://localhost:3000/score&quot; method=&quot;post&quot;&gt;
+        请输入考号：&lt;input type=&quot;text&quot; name=&quot;code&quot;&gt;
+        &lt;input type=&quot;submit&quot; value=&quot;查询&quot;&gt;
+    &lt;/form&gt;
+    &lt;div&gt;&lt;a href=&quot;http://localhost:3000/all&quot;&gt;全部成绩&lt;/a&gt;&lt;/div&gt;
+&lt;/body&gt;
+</code></pre></div><p>js</p> <div class="language- extra-class"><pre class="language-text"><code>onst http = require('http');	//node请求方法
+const path = require('path');	//node请求方法
+const fs = require('fs');		//node请求方法名称
+const querystring = require('querystring');	//querystring查询字符串模块
+const scoreData = require('./scores.json');
+const template = require('art-template');
+
+http.createServer((req,res)=&gt;{	 // 路由（请求路径+请求方式）
+    // 查询成绩的入口地址 /query
+    if(req.url.startsWith('/query') &amp;&amp; req.method == 'GET'){
+        let content = template(path.join(__dirname,'view','index.art'),{});
+        res.end(content);
+    }else if(req.url.startsWith('/score') &amp;&amp; req.method == 'POST'){
+        // 获取成绩的结果 /score
+        let pdata = '';
+        req.on('data',(chunk)=&gt;{
+            pdata += chunk;
+        });
+        req.on('end',()=&gt;{
+            let obj = querystring.parse(pdata);
+            let result = scoreData[obj.code];
+            let content = template(path.join(__dirname,'view','result.art'),result);
+            res.end(content);
+        });
+    }else if(req.url.startsWith('/all') &amp;&amp; req.method == 'GET'){
+        let arr = [];
+        for(let key in scoreData){
+            arr.push(scoreData[key]);
+        }
+        // 全部成绩
+        let content = template(path.join(__dirname,'view','list.art'),{
+            list : arr
+        });
+        res.end(content);
+    }
+}).listen(3000,()=&gt;{
+    console.log('running....');
+});
+</code></pre></div><h4 id="中间件"><a href="#中间件" class="header-anchor">#</a> 中间件</h4> <p>就是处理过程中的一个环节（本质上就是一个函数）</p> <div class="language- extra-class"><pre class="language-text"><code>const express = require('express');
+const app = express();
+let total = 0;
+
+app.use((req,res,next)=&gt;{
+    console.log('有人访问');
+    // next方法的作用就是把请求传递到下一个中间件
+    next()
+});
+
+app.use('/user',(req,res,next)=&gt;{
+    // 记录访问时间
+    console.log(Date.now());
+    // next方法的作用就是把请求传递到下一个中间件
+    next()
+});
+
+app.use('/user',(req,res,next)=&gt;{
+    // 记录访问日志
+    console.log('访问了/user');
+    next()
+});
+
+app.use('/user',(req,res)=&gt;{
+    total++;
+    console.log(total);
+    res.send('result');
+});
+
+app.listen(3000,()=&gt;{
+    console.log('running...');
+});
+</code></pre></div><p>中间件的挂载方式和执行流程
+use方法
+路由方式:get post put delete</p> <div class="language- extra-class"><pre class="language-text"><code>const express = require('express');
+const app = express();
+
+// app.get('/abc',(req,res,next)=&gt;{
+//     console.log(1);
+//     // 跳转到下一个路由
+//     next('route');
+// },(req,res)=&gt;{
+//     console.log(2);
+//     res.send('abc');
+// });
+
+// app.get('/abc',(req,res)=&gt;{
+//     console.log(3);
+//     res.send('hello');
+// });
+// --------------------------------
+var cb0 = function (req, res, next) {
+  console.log('CB0');
+  next();
+}
+
+var cb1 = function (req, res, next) {
+  console.log('CB1');
+  next();
+}
+
+var cb2 = function (req, res) {
+  res.send('Hello from C!');
+}
+
+app.get('/example', [cb0, cb1, cb2]);
+
+app.listen(3000,()=&gt;{
+    console.log('running...');
+});
+</code></pre></div><p>应用中间件</p> <p>参数处理</p> <div class="language- extra-class"><pre class="language-text"><code>const express = require('express');
+const app = express();
+const bodyParser = require('body-parser')
+// 挂载内置中间件
+app.use(express.static('public'));
+
+// 挂载参数处理中间件（post）
+app.use(bodyParser.urlencoded({ extended: false }));
+// 处理json格式的参数
+app.use(bodyParser.json());
+
+// 处理get提交参数
+app.get('/login',(req,res)=&gt;{
+    let data = req.query;
+    console.log(data);
+    res.send('get data');
+});
+
+// 处理post提交参数
+app.post('/login',(req,res)=&gt;{
+    let data = req.body;
+    // console.log(data);
+    if(data.username == 'admin' &amp;&amp; data.password == '123'){
+        res.send('success');
+    }else{
+        res.send('failure');
+    }
+});
+
+app.put('/login',(req,res)=&gt;{
+    res.end('put data');
+});
+
+app.delete('/login',(req,res)=&gt;{
+    res.end('delete data');
+});
+
+app.listen(3000,()=&gt;{
+    console.log('running...');
+});
+</code></pre></div><p>模板引擎整合：art-template</p> <div class="language- extra-class"><pre class="language-text"><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;jquery.js&quot;&gt;&lt;/script&gt;	//引入jquery
+    &lt;script type=&quot;text/javascript&quot;&gt;
+    $(function(){
+        $('#btn').click(function(){
+            var obj = {
+                username : $('#username').val(),
+                password : $('#password').val()
+            }
+            $.ajax({
+                type : 'delete',
+                url : 'http://localhost:3000/login',
+                contentType : 'application/json',
+                dataType : 'text',
+                // data : $('form:eq(0)').serialize(),
+                data : JSON.stringify(obj),
+                success : function(data){
+                    console.log(data);
+                }
+            });
+        });
+    }); 
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;form action=&quot;http://localhost:3000/login&quot; method=&quot;get&quot;&gt;
+        用户名：&lt;input type=&quot;text&quot; name=&quot;username&quot; id=&quot;username&quot;&gt;&lt;br&gt;
+        密  码：&lt;input type=&quot;password&quot; name=&quot;password&quot; id=&quot;password&quot;&gt;&lt;br&gt;
+        &lt;input type=&quot;button&quot; id=&quot;btn&quot; value=&quot;提交&quot;&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+//
+const express = require('express');
+const path = require('path');
+const template = require('art-template');
+const app = express();
+
+// 设置模板的路径
+app.set('views',path.join(__dirname,'views'));
+// 设置模板引擎
+app.set('view engine','art');
+
+// 使express兼容art-template模板引擎
+app.engine('art', require('express-art-template'));
+
+app.get('/list',(req,res)=&gt;{
+    let data = {
+        title : '水果',
+        list : ['apple','orange','banana']
+    }
+    // 参数一：模板名称；参数二：渲染模板的数据
+    res.render('list',data);
+});
+
+app.listen(3000,()=&gt;{
+    console.log('running...');
+});
+</code></pre></div><h3 id="案例-登录验证express"><a href="#案例-登录验证express" class="header-anchor">#</a> 案例:登录验证Express</h3> <div class="language- extra-class"><pre class="language-text"><code>
+</code></pre></div></div> <div class="page-edit"><!----></div> <!----> </div></div> <div class="Blogright el-col el-col-24 el-col-sm-24 el-col-md-6"><div class="blogright el-col el-col-24" data-v-1967c5e6><div class="h-information" data-v-1967c5e6><a href="#/home" data-v-1967c5e6><img src="/assets/img/me.12bb298b.jpg" alt="" data-v-1967c5e6></a> <p data-v-1967c5e6>goodoo!!!</p> <div class="link" data-v-1967c5e6><a href="/" class="el-tooltip item" data-v-1967c5e6 data-v-1967c5e6><i class="iconfont iconblog1" data-v-1967c5e6></i></a> <a href="https://www.github.com/IJssel" target="_blank" class="el-tooltip item" data-v-1967c5e6 data-v-1967c5e6><i class="iconfont icongit" data-v-1967c5e6></i></a> <a href="/about" class="el-tooltip item" data-v-1967c5e6 data-v-1967c5e6><i class="iconfont iconQQ" data-v-1967c5e6></i></a> <a href="/about" class="el-tooltip item" data-v-1967c5e6 data-v-1967c5e6><i class="iconfont iconweixin1" data-v-1967c5e6></i></a> <a href="https://www.138888.club" target="_blank" class="el-tooltip item" data-v-1967c5e6 data-v-1967c5e6><i class="iconfont iconjianli1" data-v-1967c5e6></i></a></div></div> <div class="el-card box-card rlaber is-always-shadow" data-v-1967c5e6><!----><div class="el-card__body"><p data-v-1967c5e6>标签</p> <span class="eltag el-tag el-tag--small el-tag--plain" data-v-1967c5e6><a href="/blog/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%20JavaScript%20%E5%8E%9F%E5%9E%8B.html" data-v-1967c5e6>[
+  &quot;JavaScript&quot;
+]</a></span><span class="eltag el-tag el-tag--small el-tag--plain" data-v-1967c5e6><a href="/blog/vuepress-plugin-img-lazy.html" data-v-1967c5e6>[
+  &quot;vue&quot;
+]</a></span><span class="eltag el-tag el-tag--small el-tag--plain" data-v-1967c5e6><a href="/blog/vuepress%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95.html" data-v-1967c5e6>[
+  &quot;vue&quot;
+]</a></span><span class="eltag el-tag el-tag--small el-tag--plain" data-v-1967c5e6><a href="/blog/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%20JavaScript%20%E5%AF%B9%E8%B1%A1%E5%92%8C%E6%95%B0%E7%BB%84%E6%8B%B7%E8%B4%9D.html" data-v-1967c5e6>[
+  &quot;JavaScript&quot;
+]</a></span><span class="eltag el-tag el-tag--small el-tag--plain" data-v-1967c5e6><a href="/blog/less%20%E5%8F%82%E6%95%B0%E4%BB%8B%E7%BB%8D.html" data-v-1967c5e6>[
+  &quot;less&quot;
+]</a></span><span class="eltag el-tag el-tag--small el-tag--plain" data-v-1967c5e6><a href="/blog/css%E5%9E%82%E7%9B%B4%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD.html" data-v-1967c5e6>[
+  &quot;css&quot;
+]</a></span><span class="eltag el-tag el-tag--small el-tag--plain" data-v-1967c5e6><a href="/blog/%E6%9C%80%E5%85%A8%E7%9A%84css%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD.html" data-v-1967c5e6>[
+  &quot;css&quot;
+]</a></span></div></div> <div class="el-card box-card rclass is-always-shadow" data-v-1967c5e6><!----><div class="el-card__body"><p data-v-1967c5e6>文章</p> <div class="txt-item" data-v-1967c5e6><a href="/blog/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%20JavaScript%20%E5%8E%9F%E5%9E%8B.html" data-v-1967c5e6>深入理解 JavaScript 原型</a></div><div class="txt-item" data-v-1967c5e6><a href="/blog/vuepress-plugin-img-lazy.html" data-v-1967c5e6>vuepress-plugin-img-lazy</a></div><div class="txt-item" data-v-1967c5e6><a href="/blog/vuepress%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95.html" data-v-1967c5e6>vuepress 踩坑记录</a></div><div class="txt-item" data-v-1967c5e6><a href="/blog/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%20JavaScript%20%E5%AF%B9%E8%B1%A1%E5%92%8C%E6%95%B0%E7%BB%84%E6%8B%B7%E8%B4%9D.html" data-v-1967c5e6>深入理解 JavaScript 对象和数组拷贝</a></div><div class="txt-item" data-v-1967c5e6><a href="/blog/less%20%E5%8F%82%E6%95%B0%E4%BB%8B%E7%BB%8D.html" data-v-1967c5e6>less 参数介绍</a></div><div class="txt-item" data-v-1967c5e6><a href="/blog/css%E5%9E%82%E7%9B%B4%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD.html" data-v-1967c5e6>css垂直水平居中</a></div><div class="txt-item" data-v-1967c5e6><a href="/blog/%E6%9C%80%E5%85%A8%E7%9A%84css%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD.html" data-v-1967c5e6>最全CSS3实现水平垂直居中的10种方案</a></div></div></div> <div class="el-card box-card calendar is-always-shadow" data-v-1967c5e6><!----><div class="el-card__body"><p data-v-1967c5e6>日历</p> <div class="el-calendar" data-v-1967c5e6><div class="el-calendar__header"><div class="el-calendar__title">
+      2019 年 11 月
+    </div><div class="el-calendar__button-group"><div class="el-button-group"><button type="button" class="el-button el-button--plain el-button--mini"><!----><!----><span>
+          上个月
+        </span></button><button type="button" class="el-button el-button--plain el-button--mini"><!----><!----><span>
+          今天
+        </span></button><button type="button" class="el-button el-button--plain el-button--mini"><!----><!----><span>
+          下个月
+        </span></button></div></div></div><div class="el-calendar__body"><table cellspacing="0" cellpadding="0" class="el-calendar-table"><thead><th>一</th><th>二</th><th>三</th><th>四</th><th>五</th><th>六</th><th>日</th></thead><tbody><tr class="el-calendar-table__row"><td class="prev"><div class="el-calendar-day"><span>28</span></div></td><td class="prev"><div class="el-calendar-day"><span>29</span></div></td><td class="prev"><div class="el-calendar-day"><span>30</span></div></td><td class="prev"><div class="el-calendar-day"><span>31</span></div></td><td class="current"><div class="el-calendar-day"><span>1</span></div></td><td class="current"><div class="el-calendar-day"><span>2</span></div></td><td class="current"><div class="el-calendar-day"><span>3</span></div></td></tr><tr class="el-calendar-table__row"><td class="current"><div class="el-calendar-day"><span>4</span></div></td><td class="current"><div class="el-calendar-day"><span>5</span></div></td><td class="current"><div class="el-calendar-day"><span>6</span></div></td><td class="current"><div class="el-calendar-day"><span>7</span></div></td><td class="current"><div class="el-calendar-day"><span>8</span></div></td><td class="current"><div class="el-calendar-day"><span>9</span></div></td><td class="current"><div class="el-calendar-day"><span>10</span></div></td></tr><tr class="el-calendar-table__row"><td class="current"><div class="el-calendar-day"><span>11</span></div></td><td class="current is-today"><div class="el-calendar-day"><span>12</span></div></td><td class="current"><div class="el-calendar-day"><span>13</span></div></td><td class="current"><div class="el-calendar-day"><span>14</span></div></td><td class="current"><div class="el-calendar-day"><span>15</span></div></td><td class="current"><div class="el-calendar-day"><span>16</span></div></td><td class="current"><div class="el-calendar-day"><span>17</span></div></td></tr><tr class="el-calendar-table__row"><td class="current"><div class="el-calendar-day"><span>18</span></div></td><td class="current"><div class="el-calendar-day"><span>19</span></div></td><td class="current"><div class="el-calendar-day"><span>20</span></div></td><td class="current"><div class="el-calendar-day"><span>21</span></div></td><td class="current"><div class="el-calendar-day"><span>22</span></div></td><td class="current"><div class="el-calendar-day"><span>23</span></div></td><td class="current"><div class="el-calendar-day"><span>24</span></div></td></tr><tr class="el-calendar-table__row"><td class="current"><div class="el-calendar-day"><span>25</span></div></td><td class="current"><div class="el-calendar-day"><span>26</span></div></td><td class="current"><div class="el-calendar-day"><span>27</span></div></td><td class="current"><div class="el-calendar-day"><span>28</span></div></td><td class="current"><div class="el-calendar-day"><span>29</span></div></td><td class="current"><div class="el-calendar-day"><span>30</span></div></td><td class="next"><div class="el-calendar-day"><span>1</span></div></td></tr><tr class="el-calendar-table__row"><td class="next"><div class="el-calendar-day"><span>2</span></div></td><td class="next"><div class="el-calendar-day"><span>3</span></div></td><td class="next"><div class="el-calendar-day"><span>4</span></div></td><td class="next"><div class="el-calendar-day"><span>5</span></div></td><td class="next"><div class="el-calendar-day"><span>6</span></div></td><td class="next"><div class="el-calendar-day"><span>7</span></div></td><td class="next"><div class="el-calendar-day"><span>8</span></div></td></tr></tbody></table></div></div></div></div></div></div></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.b4c8b98b.js" defer></script><script src="/assets/js/9.028cc7b7.js" defer></script><script src="/assets/js/2.02848b49.js" defer></script><script src="/assets/js/34.c9bcdbc5.js" defer></script>
+  </body>
+</html>

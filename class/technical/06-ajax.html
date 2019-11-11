@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ajax | IJssel</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.b6403466.css" as="style"><link rel="preload" href="/assets/js/app.b4c8b98b.js" as="script"><link rel="preload" href="/assets/js/9.028cc7b7.js" as="script"><link rel="preload" href="/assets/js/2.02848b49.js" as="script"><link rel="preload" href="/assets/js/31.93616435.js" as="script"><link rel="prefetch" href="/assets/js/1.b30c0b2f.js"><link rel="prefetch" href="/assets/js/10.70a4d38a.js"><link rel="prefetch" href="/assets/js/11.b70f0c45.js"><link rel="prefetch" href="/assets/js/12.1f6b1c55.js"><link rel="prefetch" href="/assets/js/13.2d3fd4fc.js"><link rel="prefetch" href="/assets/js/14.a26dab64.js"><link rel="prefetch" href="/assets/js/15.d1c8baca.js"><link rel="prefetch" href="/assets/js/16.8ac78c11.js"><link rel="prefetch" href="/assets/js/17.bd205e0a.js"><link rel="prefetch" href="/assets/js/18.28b860b0.js"><link rel="prefetch" href="/assets/js/19.386071c9.js"><link rel="prefetch" href="/assets/js/20.a38cfcb4.js"><link rel="prefetch" href="/assets/js/21.0dbd6581.js"><link rel="prefetch" href="/assets/js/22.ec932502.js"><link rel="prefetch" href="/assets/js/23.3da0c521.js"><link rel="prefetch" href="/assets/js/24.1935e904.js"><link rel="prefetch" href="/assets/js/25.9c98c484.js"><link rel="prefetch" href="/assets/js/26.200a8282.js"><link rel="prefetch" href="/assets/js/27.8366e8ab.js"><link rel="prefetch" href="/assets/js/28.58d2f67a.js"><link rel="prefetch" href="/assets/js/29.401270ec.js"><link rel="prefetch" href="/assets/js/30.1262895c.js"><link rel="prefetch" href="/assets/js/32.eb289e31.js"><link rel="prefetch" href="/assets/js/33.2beb173a.js"><link rel="prefetch" href="/assets/js/34.c9bcdbc5.js"><link rel="prefetch" href="/assets/js/35.2eb41549.js"><link rel="prefetch" href="/assets/js/36.a4f8bfdf.js"><link rel="prefetch" href="/assets/js/37.716cca94.js"><link rel="prefetch" href="/assets/js/38.90af0e97.js"><link rel="prefetch" href="/assets/js/39.22dcd180.js"><link rel="prefetch" href="/assets/js/4.fa009bc8.js"><link rel="prefetch" href="/assets/js/40.051767f2.js"><link rel="prefetch" href="/assets/js/41.21cf8782.js"><link rel="prefetch" href="/assets/js/42.fa8374f5.js"><link rel="prefetch" href="/assets/js/5.d532437c.js"><link rel="prefetch" href="/assets/js/6.29715472.js"><link rel="prefetch" href="/assets/js/7.6c1aa79f.js"><link rel="prefetch" href="/assets/js/8.8692861a.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b6403466.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-4689b1e6><div data-v-4689b1e6><header class="navbar"><div><a href="/">IJssel的博客</a></div> <div class="links" style="max-width:nullpx;"><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+    首页
+</a></div> <div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/class/person/index.html" class="nav-link">
+    个人随笔
+</a></li><li class="dropdown-item"><!----> <a href="/class/technical/index.html" class="nav-link">
+    技术分享
+</a></li><li class="dropdown-item"><!----> <a href="/class/gossip/index.html" class="nav-link">
+    闲言碎语
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">实验室</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/IJssel/shop-vue-master" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    CSS/HTML
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/IJssel/shop-vue-master" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    购物商城小程序
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/IJssel/shop-vue-master" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    vue商城
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><a href="/study/index.html" class="nav-link">
+    文档
+</a></div><div class="nav-item"><a href="/links/index.html" class="nav-link">
+    链接
+</a></div><div class="nav-item"><a href="/about/index.html" class="nav-link">
+    关于
+</a></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></nav></div></header></div> <div class="sidebar-mask" data-v-4689b1e6></div> <div data-v-4689b1e6><div class="lright"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+    首页
+</a></div> <div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/class/person/index.html" class="nav-link">
+    个人随笔
+</a></li><li class="dropdown-item"><!----> <a href="/class/technical/index.html" class="nav-link">
+    技术分享
+</a></li><li class="dropdown-item"><!----> <a href="/class/gossip/index.html" class="nav-link">
+    闲言碎语
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">实验室</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/IJssel/shop-vue-master" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    CSS/HTML
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/IJssel/shop-vue-master" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    购物商城小程序
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/IJssel/shop-vue-master" target="_blank" rel="noopener noreferrer" class="nav-link external">
+    vue商城
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><a href="/study/index.html" class="nav-link">
+    文档
+</a></div><div class="nav-item"><a href="/links/index.html" class="nav-link">
+    链接
+</a></div><div class="nav-item"><a href="/about/index.html" class="nav-link">
+    关于
+</a></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></nav>  <!----> </div></div> <div class="container el-row" data-v-4689b1e6><div class="el-col el-col-24 el-col-sm-24 el-col-md-18"><div class="page"><div class="blog-header"><div class="blog-info"><span class="tag-list"><span class="tag-list__item">ajax</span></span> <time datetime="2019-07-04T00:00:00.000Z" class="time">
+                        2019-07-04
+                    </time> <h1 class="blog-title">ajax</h1></div></div> <div custom="" class="content__default"><h1 id="ajax"><a href="#ajax" class="header-anchor">#</a> ajax</h1> <h3 id="前端相关的技术点："><a href="#前端相关的技术点：" class="header-anchor">#</a> 前端相关的技术点：</h3> <ul><li>html（html5） 主要用来实现页面的排版布局</li> <li>css（css3） 主要用来实现页面的样式美化</li> <li>JavaScript（jQuery） 主要用来实现前端功能特效</li></ul> <blockquote><p>采用上面的这些技术开发的页面和前端特效脚本需要放到服务器才能够对外提供服务，才能够让互联网上的网友看到。</p></blockquote> <h3 id="客户端与服务器"><a href="#客户端与服务器" class="header-anchor">#</a> 客户端与服务器</h3> <blockquote><p>本质上都是计算机，只不过样子不同，配置不同，应用场景不同（安装的应用软件不同）</p></blockquote> <ul><li>客户端主要用于普通上网用户</li> <li>服务器主要给上网用户提供后台服务</li></ul> <h3 id="网络相关概念"><a href="#网络相关概念" class="header-anchor">#</a> 网络相关概念</h3> <ul><li>IP地址（唯一的确定互联网上的一台计算机）</li> <li>域名 IP地址的别名，方便记忆</li> <li>DNS 用于维护IP地址与域名的关系</li> <li>端口 用来确定计算机上的网络应用程序</li></ul> <h3 id="通信协议理解"><a href="#通信协议理解" class="header-anchor">#</a> 通信协议理解</h3> <blockquote><p>通信双方约定的规则</p></blockquote> <ul><li>http/https 超为本传输协议</li> <li>ftp 文件传输协议</li> <li>smpt/pop3 邮件收发协议</li> <li>......</li></ul> <h3 id="搭建服务器环境"><a href="#搭建服务器环境" class="header-anchor">#</a> 搭建服务器环境</h3> <h4 id="wamp集成环境介绍"><a href="#wamp集成环境介绍" class="header-anchor">#</a> wamp集成环境介绍</h4> <ul><li>windows 操作系统</li> <li>Apache 提供静态资源服务（html页面、js文件、css文件、图片。。。）</li> <li>MySQL 数据库</li> <li>php 编程语言，可以用来开发网站</li></ul> <h4 id="wamp的安装配置"><a href="#wamp的安装配置" class="header-anchor">#</a> wamp的安装配置</h4> <ul><li>参见详细文档</li></ul> <h3 id="网站"><a href="#网站" class="header-anchor">#</a> 网站</h3> <blockquote><p>网站由一系列页面组成（页面由js、css、图片、html标签。。。所有的这些文件都被称为资源）</p></blockquote> <h4 id="静态网站"><a href="#静态网站" class="header-anchor">#</a> 静态网站</h4> <blockquote><p>就是提前写好的html页面（包括图片、媒体文件。。。静态资源文件），并且部署到服务器上
+<br>静态网站主要存在的问题：</p></blockquote> <ul><li>随着网站规模的增大可维护性逐渐降低</li> <li>没有交互性</li></ul> <h4 id="动态网站"><a href="#动态网站" class="header-anchor">#</a> 动态网站</h4> <blockquote><p>动态指的是html页面是动态生成的，这里动态生成的不一定是一个完整的页面，有可能仅仅是页面的一部分，或者仅仅是数据(普通字符串、json、xml)
+实现动态网站的技术：</p></blockquote> <ul><li>php</li> <li>java（jsp）</li> <li>.net</li> <li>Node.js</li> <li>python</li> <li>......</li></ul> <p>登录验证</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;script type=&quot;text/javascript&quot;&gt;
+    window.onload = function(){
+        var btn = document.getElementById('btn');
+        btn.onclick = function(){
+            var uname = document.getElementById('username').value;
+            var pw = document.getElementById('password').value;
+
+            // 使用Ajax发送请求需要如下几步：
+            // 1、创建XMLHttpRequest对象
+            var xhr = new XMLHttpRequest();
+            // 2、准备发送
+            xhr.open('get','./01check.php?username='+uname+'&amp;password='+pw,true);
+            // 3、执行发送动作
+            xhr.send(null);
+            // 4、指定回调函数
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState == 4){
+                    if(xhr.status == 200){
+                        var data = xhr.responseText;
+                        var info = document.getElementById('info');
+                        if(data == '1'){
+                            info.innerHTML = '登录成功';
+                        }else if(data == '2'){
+                            info.innerHTML = '用户名或者密码错误';
+                        }
+                        
+&lt;body&gt;
+    &lt;form&gt;
+        用户名：
+        &lt;input type=&quot;text&quot; name=&quot;username&quot; id=&quot;username&quot;&gt;&lt;span id=&quot;info&quot;&gt;&lt;/span&gt;
+        &lt;br&gt; 密码：
+        &lt;input type=&quot;text&quot; name=&quot;password&quot; id=&quot;password&quot;&gt;
+        &lt;input type=&quot;button&quot; value=&quot;登录&quot; id=&quot;btn&quot;&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code> btn.onclick = function(){
+  var uname = document.getElementById('username').value;
+  var pw = document.getElementById('password').value;
+
+  // 1、创建XMLHttpRequest对象
+  var xhr = null;
+  if(window.XMLHttpRequest){
+  	xhr = new XMLHttpRequest();//标准
+    }else{
+    xhr = new ActiveXObject(&quot;Microsoft&quot;);//IE6
+    }
+    
+     // readyState=0表示xhr对象创建完成(有无)
+    //console.log(xhr.readyState + '----------1-----------');
+    
+     // 2、准备发送
+    参数一：请求方式（get获取数据；post提交数据）
+    参数二：请求地址
+    参数三：同步或者异步标志位，默认是true表示异步，false表示同步
+
+  //get请求那么请求参数必须在url中传递
+    //encodeURI()用来对中文参数进行编码，防止乱码
+    var param = 'username='+uname+'&amp;password='+pw;
+  xhr.open('get','03get.php?'+encodeURI(param),true);//方式 地址转码 true异步false同步
+    // 3、执行发送动作
+    xhr.send(null);//get请求这里需要添加null参数
+    
+  //post请求参数通过send传递，不需要通过encodeURI()转码
+   //必须设置请求头信息
+   var param = 'username='+uname+'&amp;password='+pw;
+   xhr.open('post','04post.php',false);			//方式 地址 true异步
+   // 3、执行发送动作
+  xhr.setRequestHeader(&quot;Content-Type&quot;,&quot;application/x-www-form-urlencoded&quot;);//头信息
+   xhr.send(param);			//post请求参数在这里传递，并且不需要转码
+    
+    // 4、指定回调函数
+     //readyState:
+  	 2 浏览器已经收到了服务器响应的数据
+  	 3 正在解析数据
+  	 4 数据已经解析完成，可以使用了
+    xhr.onreadystatechange = function(){
+      if(xhr.readyState == 4){
+        if(xhr.status == 200){		
+           alert(xhr.responseText);
+         }
+    // http的常见状态码
+       200表示响应成功
+       404没有找到请求的资源
+       500服务器端错误
+</code></pre></div><h4 id="ajax直接封装实例-查询"><a href="#ajax直接封装实例-查询" class="header-anchor">#</a> ajax直接封装实例: 查询</h4> <div class="language- extra-class"><pre class="language-text"><code>//功能需求：页面输入图书编号，查询服务器端的图书信息并且解析渲染
+&lt;script type=&quot;text/javascript&quot; src=&quot;./ajax.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+
+window.onload = function(){
+ var btn = document.getElementById('btn');
+ btn.onclick = function(){
+  var code = document.getElementById('code').value;
+  
+  //自己封装
+  ajax('./11.php','get','code='+code,'json',function(data){//php+get+code+json+dat
+  
+  // 解析数据并渲染页面
+    var info = document.getElementById('info');
+    if(data.flag == 0){		//返回0没有
+     info.innerHTML = '没有这本书';
+    }else{
+       var tag = '&lt;ul&gt;&lt;li&gt;书名：'+data.bookname+'&lt;/li&gt;&lt;li&gt;作者：'+data.author+'&lt;/li&gt;		  &lt;li&gt;描述：'+data.desc+'&lt;/li&gt;&lt;/ul&gt;';
+    info.innerHTML = tag;
+         }
+      });
+   }
+}
+
+//封装ajax.js
+function ajax(url,type,param,dataType,callback){	//url+type+param+data+callback
+    var xhr = null;	
+    if(window.XMLHttpRequest){
+        xhr = new XMLHttpRequest();
+    }else{
+        xhr = new ActiveXObject('Microsoft.XMLHTTP');
+    }
+    if(type == 'get'){		//get
+        url += &quot;?&quot; + param;
+    }
+    xhr.open(type,url,true);
+
+    var data = null;
+    if(type == 'post'){		//post
+        data = param;
+        xhr.setRequestHeader(&quot;Content-Type&quot;,&quot;application/x-www-form-urlencoded&quot;);
+    }
+    xhr.send(data);		//发送
+    xhr.onreadystatechange = function(){
+        if(xhr.readyState == 4){
+            if(xhr.status == 200){
+                var data = xhr.responseText;
+                if(dataType == 'json'){
+                    data = JSON.parse(data);
+                }
+                callback(data);
+            }
+        }
+    }
+}
+</code></pre></div><p>局限性: 传参的顺序严格要求, 参数以对象形式传递</p> <h4 id="调用jquery-ajax-封装实例"><a href="#调用jquery-ajax-封装实例" class="header-anchor">#</a> 调用jQuery-ajax 封装实例</h4> <div class="language- extra-class"><pre class="language-text"><code>&lt;script type=&quot;text/javascript&quot; src=&quot;./jquery.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+//jQuery-ajax相关API基本使用
+window.onload = function() {
+var btn = document.getElementById('btn');
+ btn.onclick = function() {
+  var code = document.getElementById('code').value;
+  
+  //调用jQuery封装 不同点
+  $.ajax({	
+  	type: 'post',	
+  	url: './11.php',		// url: './11.php?code=' + code,
+  	data : {code:code},
+  	dataType: 'json',   	//xml json text html script jsonp
+  success: function(data) { 
+  
+   var info = document.getElementById('info');
+  if (data.flag == 0) {
+    info.innerHTML = '没有这本书';
+    } else {
+    var tag = '&lt;ul&gt;&lt;li&gt;书名：' + data.bookname + '&lt;/li&gt;&lt;li&gt;作者：' + data.author + '&lt;/li&gt;&lt;li&gt;描述：' + data.desc + '&lt;/li&gt;&lt;/ul&gt;';
+   info.innerHTML = tag;
+            }
+         }
+     });
+   }
+}
+&lt;/script&gt;
+
+</code></pre></div><h4 id="jquery-ajax形式封装-最终"><a href="#jquery-ajax形式封装-最终" class="header-anchor">#</a> JQuery-ajax形式封装(最终)</h4> <div class="language- extra-class"><pre class="language-text"><code>$(function(){
+  $(&quot;#btn&quot;).click(function(){
+  var code = $(&quot;#code&quot;).val();
+  $.ajax({
+  	type:'get',		//省略 默认get
+  	url:'./11.php',
+  	data:{code:code},
+  	dataType:'json',
+  	success:function(data){
+  	if(data.flag == 0){
+    	$(&quot;#info&quot;).html(&quot;该图书不存在&quot;);
+  	}else{
+  		var tag = '&lt;ul&gt;&lt;li&gt;书名：' + data.bookname + '&lt;/li&gt;&lt;li&gt;作者：' + data.author 			+'&lt;/li&gt;&lt;li&gt;描述：' + data.desc + '&lt;/li&gt;&lt;/ul&gt;';
+   $(&quot;#info&quot;).html(tag);
+   }
+ },
+ error:function(data){
+  console.dir(data);
+   $(&quot;#info&quot;).html(&quot;服务器发生错误，请与管理员联系&quot;);
+   }
+   });
+  });
+ });
+</code></pre></div><p>好处: 次序无要求  简化</p> <h4 id="仿jquery封装-jquery封装原理"><a href="#仿jquery封装-jquery封装原理" class="header-anchor">#</a> 仿JQuery封装--jquery封装原理(??)</h4> <div class="language- extra-class"><pre class="language-text"><code>$(function(){
+ $(&quot;#btn&quot;).click(function(){
+ var code = $(&quot;#code&quot;).val();
+ var data = ajax({
+ type:'post',
+ url:'./14.php',
+ dataType:'json',
+ async : false,
+ data:{username:'张三',password:'123'}
+ });
+ console.log(data);
+ var html = '&lt;div&gt;&lt;span&gt;用户名：'+data.password+'&lt;/span&gt;&lt;span&gt;密码：'+data.password+'&lt;/span&gt;&lt;/div&gt;'
+ $(&quot;#info&quot;).html(html);
+ });
+});
+&lt;/script&gt;
+
+//内部实现
+function ajax(obj){
+    // 默认参数
+    var defaults = {
+        type : 'get',
+        data : {},
+        url : '#',
+        dataType : 'text',
+        async : true,
+        success : function(data){console.log(data)}
+    }
+    // 处理形参，传递参数的时候就覆盖默认参数，不传递就使用默认参数
+    for(var key in obj){
+        defaults[key] = obj[key];
+    }
+    // 1、创建XMLHttpRequest对象
+    var xhr = null;
+    if(window.XMLHttpRequest){
+        xhr = new XMLHttpRequest();
+    }else{
+        xhr = new ActiveXObject('Microsoft.XMLHTTP');
+    }
+    // 把对象形式的参数转化为字符串形式的参数
+    /*
+    {username:'zhangsan','password':123}
+    转换为
+    username=zhangsan&amp;password=123
+    */
+    var param = '';
+    for(var attr in obj.data){
+        param += attr + '=' + obj.data[attr] + '&amp;';
+    }
+    if(param){
+        param = param.substring(0,param.length - 1);
+    }
+    // 处理get请求参数并且处理中文乱码问题
+    if(defaults.type == 'get'){
+        defaults.url += '?' + encodeURI(param);
+    }
+    // 2、准备发送（设置发送的参数）
+    xhr.open(defaults.type,defaults.url,defaults.async);
+    // 处理post请求参数并且设置请求头信息（必须设置）
+    var data = null;
+    if(defaults.type == 'post'){
+        data = param;
+        xhr.setRequestHeader(&quot;Content-Type&quot;,&quot;application/x-www-form-urlencoded&quot;);
+    }
+    // 3、执行发送动作
+    xhr.send(data);
+    // 处理同步请求，不会调用回调函数
+    if(!defaults.async){
+        if(defaults.dataType == 'json'){
+            return JSON.parse(xhr.responseText);
+        }else{
+            return xhr.responseText;
+        }
+    }
+    // 4、指定回调函数（处理服务器响应数据）
+    xhr.onreadystatechange = function(){
+        if(xhr.readyState == 4){
+            if(xhr.status == 200){
+                var data = xhr.responseText;
+                if(defaults.dataType == 'json'){
+                    // data = eval(&quot;(&quot;+ data +&quot;)&quot;);
+                    data = JSON.parse(data);
+                }
+                defaults.success(data);
+            }
+        }
+    }
+}
+
+</code></pre></div><h2 id="跨域"><a href="#跨域" class="header-anchor">#</a> 跨域</h2> <p>静态script跨域(少用)</p> <div class="language- extra-class"><pre class="language-text"><code>//script标签里面的async属性表示异步加载资源，默认情况下是同步加载 
+ &lt;script async type=&quot;text/javascript&quot; src=&quot;http://tom.com/data.php?flag=1&quot;&gt;
+&lt;/script&gt;
+ &lt;script type=&quot;text/javascript&quot;&gt;
+   console.log(data.username);
+ &lt;/script&gt;
+</code></pre></div><p>这种方式存在的两个主要的问题：
+1、必须保证加载的顺序   获取跨域数据必须在script下面
+2、不方便通过程序传递参数</p> <p>sonp实现跨域</p> <p>动态跨域</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;script type=&quot;text/javascript&quot;&gt;
+// 这里的foo函数由谁调用？实际上有服务器响应的内容（这里的内容就是js代码-函数调用foo(123)）调用
+function foo(data){	//顺序不重要		foo任意函数名
+   console.log(data.username,data.password);
+}
+
+var script = document.createElement('script');
+script.src = 'http://tom.com/data.php?flag='+flag;	//地址
+var head = document.getElementsByTagName('head')[0];
+head.appendChild(script);
+</code></pre></div><p>这就是jsonp的本质：动态创建script标签，然后通过它的src属性发送跨域请求，然后服务器端响应的数据格式为【函数调用（foo(实参)）】，所以在发送请求之前必须先声明一个函数，并且函数的名字与参数中传递的名字要一致。这里声明的函数是由服务器响应的内容（实际就是一段js代码-函数调用）来调用</p> <p>jsonp-JQuery跨域 智能提示案例</p> <div class="language- extra-class"><pre class="language-text"><code>$(function(){
+  $(&quot;#keyword&quot;).keyup(function(){
+  var kw = $(this).val();
+  $.ajax({
+    url:'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su',
+    jsonp:'cb',//jsonp属性的作用就是自定义参数名字（callback=abc 这里的名字指的是等号前面的键，后端根据这个键获取方法名，jquery的默认参数名称是callback）
+    data:{wd:kw},
+    dataType:'jsonp',//这个属性的作用就是自定义回调函数的名字（callback=abc ，这里的名字指的是等号后面的值）
+    success:function(data){
+      var sug = data.s;
+      var tag = '&lt;ul&gt;';
+      $.each(sug,function(i,e){
+           tag += '&lt;li&gt;'+e+'&lt;/li&gt;';
+    });
+    tag += '&lt;/ul&gt;';
+    $(&quot;#info&quot;).html(tag);
+    $(&quot;#info&quot;).find('li').hover(function(){
+     $(this).css('backgroundColor','lightblue');
+    },function(){
+      $(this).css('backgroundColor','lightgray');
+    });
+    }
+  });
+ });
+});
+</code></pre></div><h4 id="仿jquery综合ajax-jsonp跨域"><a href="#仿jquery综合ajax-jsonp跨域" class="header-anchor">#</a> 仿JQuery综合ajax+jsonp跨域</h4> <div class="language- extra-class"><pre class="language-text"><code>&lt;script type=&quot;text/javascript&quot; src=&quot;./ajax2.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+ajax({
+ url:&quot;http://tom.com/jsonp.php&quot;,
+ dataType:'jsonp',
+ data:{username:'zhangsan',password:'123'},
+ jsonp:'cb',
+ jsonpCallback:'abc',
+ success:function(data){//这里的data是形参
+ console.log(data.username,data.password);
+  }
+});
+</code></pre></div><p>js封装</p> <div class="language- extra-class"><pre class="language-text"><code>function ajax(obj){
+    var defaults = {
+        type : 'get',
+        async : true,
+        url : '#',
+        dataType : 'text',
+        jsonp : 'callback',
+        data : {},
+        success:function(data){console.log(data);}
+    }
+
+    for(var key in obj){
+        defaults[key] = obj[key];
+    }
+
+    if(defaults.dataType == 'jsonp'){	//跨域
+        ajax4Jsonp(defaults);
+    }else{
+        ajax4Json(defaults);	//ajax
+    }
+}
+
+//ajax封装
+function ajax4Json(defaults){	
+    // 1、创建XMLHttpRequest对象
+    var xhr = null;
+    if(window.XMLHttpRequest){
+        xhr = new XMLHttpRequest();
+    }else{
+        xhr = new ActiveXObject('Microsoft.XMLHTTP');
+    }
+    // 把对象形式的参数转化为字符串形式的参数
+    /*
+    {username:'zhangsan','password':123}
+    转换为
+    username=zhangsan&amp;password=123
+    */
+    var param = '';
+    for(var attr in defaults.data){
+        param += attr + '=' + defaults.data[attr] + '&amp;';
+    }
+    if(param){
+        param = param.substring(0,param.length - 1);
+    }
+    // 处理get请求参数并且处理中文乱码问题
+    if(defaults.type == 'get'){
+        defaults.url += '?' + encodeURI(param);
+    }
+    // 2、准备发送（设置发送的参数）
+    xhr.open(defaults.type,defaults.url,defaults.async);
+    // 处理post请求参数并且设置请求头信息（必须设置）
+    var data = null;
+    if(defaults.type == 'post'){
+        data = param;
+        xhr.setRequestHeader(&quot;Content-Type&quot;,&quot;application/x-www-form-urlencoded&quot;);
+    }
+    // 3、执行发送动作
+    xhr.send(data);
+    // 处理同步请求，不会调用回调函数
+    if(!defaults.async){
+        if(defaults.dataType == 'json'){
+            return JSON.parse(xhr.responseText);
+        }else{
+            return xhr.responseText;
+        }
+    }
+    // 4、指定回调函数（处理服务器响应数据）
+    xhr.onreadystatechange = function(){
+        if(xhr.readyState == 4){
+            if(xhr.status == 200){
+                var data = xhr.responseText;
+                if(defaults.dataType == 'json'){
+                    // data = eval(&quot;(&quot;+ data +&quot;)&quot;);
+                    data = JSON.parse(data);
+                }
+                defaults.success(data);
+            }
+        }
+    }
+}
+
+//jsonp跨域封装
+function ajax4Jsonp(defaults){		
+    // 这里是默认的回调函数名称
+    // expando: &quot;jQuery&quot; + ( version + Math.random() ).replace( /\D/g, &quot;&quot; ),
+    var cbName = 'jQuery' + ('1.11.1' + Math.random()).replace(/\D/g,&quot;&quot;) + '_' + (new Date().getTime());
+    if(defaults.jsonpCallback){
+        cbName = defaults.jsonpCallback;
+    }
+
+    // 这里就是回调函数，调用方式：服务器响应内容来调用
+    // 向window对象中添加了一个方法，方法名称是变量cbName的值
+    window[cbName] = function(data){
+        defaults.success(data);//这里success的data是实参
+    }
+
+    var param = '';
+    for(var attr in defaults.data){
+        param += attr + '=' + defaults.data[attr] + '&amp;';
+    }
+    if(param){
+        param = param.substring(0,param.length-1);
+        param = '&amp;' + param;
+    }
+    var script = document.createElement('script');
+    script.src = defaults.url + '?' + defaults.jsonp + '=' + cbName + param;
+    var head = document.getElementsByTagName('head')[0];
+    head.appendChild(script);
+}
+</code></pre></div></div> <div class="page-edit"><!----></div> <!----> </div></div> <div class="Blogright el-col el-col-24 el-col-sm-24 el-col-md-6"><div class="blogright el-col el-col-24" data-v-1967c5e6><div class="h-information" data-v-1967c5e6><a href="#/home" data-v-1967c5e6><img src="/assets/img/me.12bb298b.jpg" alt="" data-v-1967c5e6></a> <p data-v-1967c5e6>goodoo!!!</p> <div class="link" data-v-1967c5e6><a href="/" class="el-tooltip item" data-v-1967c5e6 data-v-1967c5e6><i class="iconfont iconblog1" data-v-1967c5e6></i></a> <a href="https://www.github.com/IJssel" target="_blank" class="el-tooltip item" data-v-1967c5e6 data-v-1967c5e6><i class="iconfont icongit" data-v-1967c5e6></i></a> <a href="/about" class="el-tooltip item" data-v-1967c5e6 data-v-1967c5e6><i class="iconfont iconQQ" data-v-1967c5e6></i></a> <a href="/about" class="el-tooltip item" data-v-1967c5e6 data-v-1967c5e6><i class="iconfont iconweixin1" data-v-1967c5e6></i></a> <a href="https://www.138888.club" target="_blank" class="el-tooltip item" data-v-1967c5e6 data-v-1967c5e6><i class="iconfont iconjianli1" data-v-1967c5e6></i></a></div></div> <div class="el-card box-card rlaber is-always-shadow" data-v-1967c5e6><!----><div class="el-card__body"><p data-v-1967c5e6>标签</p> <span class="eltag el-tag el-tag--small el-tag--plain" data-v-1967c5e6><a href="/blog/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%20JavaScript%20%E5%8E%9F%E5%9E%8B.html" data-v-1967c5e6>[
+  &quot;JavaScript&quot;
+]</a></span><span class="eltag el-tag el-tag--small el-tag--plain" data-v-1967c5e6><a href="/blog/vuepress-plugin-img-lazy.html" data-v-1967c5e6>[
+  &quot;vue&quot;
+]</a></span><span class="eltag el-tag el-tag--small el-tag--plain" data-v-1967c5e6><a href="/blog/vuepress%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95.html" data-v-1967c5e6>[
+  &quot;vue&quot;
+]</a></span><span class="eltag el-tag el-tag--small el-tag--plain" data-v-1967c5e6><a href="/blog/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%20JavaScript%20%E5%AF%B9%E8%B1%A1%E5%92%8C%E6%95%B0%E7%BB%84%E6%8B%B7%E8%B4%9D.html" data-v-1967c5e6>[
+  &quot;JavaScript&quot;
+]</a></span><span class="eltag el-tag el-tag--small el-tag--plain" data-v-1967c5e6><a href="/blog/less%20%E5%8F%82%E6%95%B0%E4%BB%8B%E7%BB%8D.html" data-v-1967c5e6>[
+  &quot;less&quot;
+]</a></span><span class="eltag el-tag el-tag--small el-tag--plain" data-v-1967c5e6><a href="/blog/css%E5%9E%82%E7%9B%B4%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD.html" data-v-1967c5e6>[
+  &quot;css&quot;
+]</a></span><span class="eltag el-tag el-tag--small el-tag--plain" data-v-1967c5e6><a href="/blog/%E6%9C%80%E5%85%A8%E7%9A%84css%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD.html" data-v-1967c5e6>[
+  &quot;css&quot;
+]</a></span></div></div> <div class="el-card box-card rclass is-always-shadow" data-v-1967c5e6><!----><div class="el-card__body"><p data-v-1967c5e6>文章</p> <div class="txt-item" data-v-1967c5e6><a href="/blog/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%20JavaScript%20%E5%8E%9F%E5%9E%8B.html" data-v-1967c5e6>深入理解 JavaScript 原型</a></div><div class="txt-item" data-v-1967c5e6><a href="/blog/vuepress-plugin-img-lazy.html" data-v-1967c5e6>vuepress-plugin-img-lazy</a></div><div class="txt-item" data-v-1967c5e6><a href="/blog/vuepress%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95.html" data-v-1967c5e6>vuepress 踩坑记录</a></div><div class="txt-item" data-v-1967c5e6><a href="/blog/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%20JavaScript%20%E5%AF%B9%E8%B1%A1%E5%92%8C%E6%95%B0%E7%BB%84%E6%8B%B7%E8%B4%9D.html" data-v-1967c5e6>深入理解 JavaScript 对象和数组拷贝</a></div><div class="txt-item" data-v-1967c5e6><a href="/blog/less%20%E5%8F%82%E6%95%B0%E4%BB%8B%E7%BB%8D.html" data-v-1967c5e6>less 参数介绍</a></div><div class="txt-item" data-v-1967c5e6><a href="/blog/css%E5%9E%82%E7%9B%B4%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD.html" data-v-1967c5e6>css垂直水平居中</a></div><div class="txt-item" data-v-1967c5e6><a href="/blog/%E6%9C%80%E5%85%A8%E7%9A%84css%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD.html" data-v-1967c5e6>最全CSS3实现水平垂直居中的10种方案</a></div></div></div> <div class="el-card box-card calendar is-always-shadow" data-v-1967c5e6><!----><div class="el-card__body"><p data-v-1967c5e6>日历</p> <div class="el-calendar" data-v-1967c5e6><div class="el-calendar__header"><div class="el-calendar__title">
+      2019 年 11 月
+    </div><div class="el-calendar__button-group"><div class="el-button-group"><button type="button" class="el-button el-button--plain el-button--mini"><!----><!----><span>
+          上个月
+        </span></button><button type="button" class="el-button el-button--plain el-button--mini"><!----><!----><span>
+          今天
+        </span></button><button type="button" class="el-button el-button--plain el-button--mini"><!----><!----><span>
+          下个月
+        </span></button></div></div></div><div class="el-calendar__body"><table cellspacing="0" cellpadding="0" class="el-calendar-table"><thead><th>一</th><th>二</th><th>三</th><th>四</th><th>五</th><th>六</th><th>日</th></thead><tbody><tr class="el-calendar-table__row"><td class="prev"><div class="el-calendar-day"><span>28</span></div></td><td class="prev"><div class="el-calendar-day"><span>29</span></div></td><td class="prev"><div class="el-calendar-day"><span>30</span></div></td><td class="prev"><div class="el-calendar-day"><span>31</span></div></td><td class="current"><div class="el-calendar-day"><span>1</span></div></td><td class="current"><div class="el-calendar-day"><span>2</span></div></td><td class="current"><div class="el-calendar-day"><span>3</span></div></td></tr><tr class="el-calendar-table__row"><td class="current"><div class="el-calendar-day"><span>4</span></div></td><td class="current"><div class="el-calendar-day"><span>5</span></div></td><td class="current"><div class="el-calendar-day"><span>6</span></div></td><td class="current"><div class="el-calendar-day"><span>7</span></div></td><td class="current"><div class="el-calendar-day"><span>8</span></div></td><td class="current"><div class="el-calendar-day"><span>9</span></div></td><td class="current"><div class="el-calendar-day"><span>10</span></div></td></tr><tr class="el-calendar-table__row"><td class="current"><div class="el-calendar-day"><span>11</span></div></td><td class="current is-today"><div class="el-calendar-day"><span>12</span></div></td><td class="current"><div class="el-calendar-day"><span>13</span></div></td><td class="current"><div class="el-calendar-day"><span>14</span></div></td><td class="current"><div class="el-calendar-day"><span>15</span></div></td><td class="current"><div class="el-calendar-day"><span>16</span></div></td><td class="current"><div class="el-calendar-day"><span>17</span></div></td></tr><tr class="el-calendar-table__row"><td class="current"><div class="el-calendar-day"><span>18</span></div></td><td class="current"><div class="el-calendar-day"><span>19</span></div></td><td class="current"><div class="el-calendar-day"><span>20</span></div></td><td class="current"><div class="el-calendar-day"><span>21</span></div></td><td class="current"><div class="el-calendar-day"><span>22</span></div></td><td class="current"><div class="el-calendar-day"><span>23</span></div></td><td class="current"><div class="el-calendar-day"><span>24</span></div></td></tr><tr class="el-calendar-table__row"><td class="current"><div class="el-calendar-day"><span>25</span></div></td><td class="current"><div class="el-calendar-day"><span>26</span></div></td><td class="current"><div class="el-calendar-day"><span>27</span></div></td><td class="current"><div class="el-calendar-day"><span>28</span></div></td><td class="current"><div class="el-calendar-day"><span>29</span></div></td><td class="current"><div class="el-calendar-day"><span>30</span></div></td><td class="next"><div class="el-calendar-day"><span>1</span></div></td></tr><tr class="el-calendar-table__row"><td class="next"><div class="el-calendar-day"><span>2</span></div></td><td class="next"><div class="el-calendar-day"><span>3</span></div></td><td class="next"><div class="el-calendar-day"><span>4</span></div></td><td class="next"><div class="el-calendar-day"><span>5</span></div></td><td class="next"><div class="el-calendar-day"><span>6</span></div></td><td class="next"><div class="el-calendar-day"><span>7</span></div></td><td class="next"><div class="el-calendar-day"><span>8</span></div></td></tr></tbody></table></div></div></div></div></div></div></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.b4c8b98b.js" defer></script><script src="/assets/js/9.028cc7b7.js" defer></script><script src="/assets/js/2.02848b49.js" defer></script><script src="/assets/js/31.93616435.js" defer></script>
+  </body>
+</html>
